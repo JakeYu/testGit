@@ -1,11 +1,25 @@
 <html>
   <head>
     <title>Test HTML on Git</title>
+    <link rel="text/stylesheet" href="master.sass">
   </head>
   <body>
-    <p>
-      this is my fantasy!
-    </p>
-    ul>li*5
+    <div ng-app="">
+     	<p>Name: <input type="text" ng-model="name"></p>
+     	<p class='bind-name' ng-bind="name"></p>
+    </div>
+    <div id="menu_wrapper">
+      <ul>
+        <li><a href="#"><strong><span>Home</span></strong></a></li>
+        <li><a href="#"><strong><span>About Us</span></strong></a></li>
+        <li><a href="#"><strong><span>Contact Us</span></strong></a></li>
+      </ul>
+    </div>
+
+    <footer>
+      <div class="copyright">&copy; JakeYu80dev 2014</div>
+    </footer>
+
+    <script src='http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js'></script>
   </body>
 </html>
